@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Legal notice — Fieldsmith</title>
+<title>fs / legal</title>
 <meta name="description" content="Legal notice and company details for Fieldsmith.">
 <link rel="canonical" href="https://fieldsmith.engineering/legal.html">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230E0E0C'/%3E%3Ctext x='32' y='45' font-family='Georgia,serif' font-size='40' font-weight='700' fill='%23FAF9F5' text-anchor='middle'%3EF%3C/text%3E%3C/svg%3E">
@@ -30,6 +30,16 @@
   .mono{font-family:'Fragment Mono',monospace;font-size:11px;letter-spacing:.09em;text-transform:uppercase;color:var(--iron);}
   .wm{font-weight:620;font-variation-settings:'wdth' 122;letter-spacing:-.028em;display:inline-flex;align-items:baseline;gap:.08em;text-decoration:none;font-size:18px;}
   .punch{display:inline-block;width:.13em;height:.13em;background:currentColor;transform:rotate(-2.5deg) translateY(-.02em);}
+
+  .stamp{
+    width:46px;height:46px;flex:0 0 auto;border:1.5px solid currentColor;
+    display:flex;align-items:center;justify-content:center;
+    font-family:'Fragment Mono',monospace;font-size:11px;letter-spacing:.05em;
+    box-shadow:inset 0 1px 0 rgba(14,14,12,.12);
+  }
+  .stamp.tilt{transform:rotate(-2deg);}
+  .stamp.solid{background:var(--ink);color:var(--paper);border-color:var(--ink);}
+  .stamp-nav{width:34px;height:34px;font-size:10px;text-decoration:none;}
 
   header.page{border-bottom:1px solid var(--hairline);padding:28px 0;}
   header.page .wrap{display:flex;align-items:center;justify-content:space-between;}
@@ -59,7 +69,7 @@
 
 <header class="page">
   <div class="wrap">
-    <a class="wm" href="/" aria-label="Fieldsmith home">fieldsmith<span class="punch"></span></a>
+    <a class="stamp solid tilt stamp-nav" href="/" aria-label="Fieldsmith home">fs</a>
     <span class="mono">Legal notice</span>
   </div>
 </header>
